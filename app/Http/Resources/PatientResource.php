@@ -17,6 +17,7 @@ class PatientResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'mobile' => $this->mobile,
             'dob' => $this->dob,
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
