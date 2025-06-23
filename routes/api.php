@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\BookingController;
 use App\Http\Controllers\Api\PatientController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\ProductController;
@@ -12,3 +13,4 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('products', ProductController::class);
 Route::apiResource('patients', PatientController::class);
 Route::apiResource('posts', PostController::class);
+Route::apiResource('bookings', BookingController::class);
